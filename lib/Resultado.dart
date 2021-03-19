@@ -19,7 +19,7 @@ class _ResultadoState extends State<Resultado> {
     if (widget.valor == "cara") {
       imagem = "images/moeda_cara.png";
     } else {
-      imagem = "images/moeda_cara.png";
+      imagem = "images/moeda_coroa.png";
     }
 
     return Scaffold(
