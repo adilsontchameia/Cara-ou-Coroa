@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:cara_coroa/Resultado.dart';
 import 'package:flutter/material.dart';
 
@@ -8,9 +10,16 @@ class Jogar extends StatefulWidget {
 
 class _JogarState extends State<Jogar> {
   void _exibirResultado() {
-    Navigator.push(
-        context, MaterialPageRoute(builder:
-         (context) => Resultado()));
+    var _imagemApp = AssetImage("images/logo.png");
+
+    //Para ligacao com os numeros aleatorios.
+    var opcaoImagem = ["cara", "coroa"];
+    //Gerando numeros aleatorios.
+    int numeroAleatorio = Random().nextInt(opcaoImagem.length);
+    var escolhaFinal = opcaoImagem[numeroAleatorio];
+
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => Resultado(escolhaFinal)));
   }
 
   @override
