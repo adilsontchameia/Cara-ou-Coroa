@@ -9,7 +9,8 @@ class Jogar extends StatefulWidget {
 class _JogarState extends State<Jogar> {
   void _exibirResultado() {
     Navigator.push(
-        context, MaterialPageRoute(builder: (context) => Resultado()));
+        context, MaterialPageRoute(builder:
+         (context) => Resultado()));
   }
 
   @override

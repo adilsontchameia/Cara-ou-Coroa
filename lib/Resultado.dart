@@ -1,3 +1,4 @@
+import 'package:cara_coroa/TelaPrimaria.dart';
 import 'package:flutter/material.dart';
 
 class Resultado extends StatefulWidget {
@@ -6,6 +7,10 @@ class Resultado extends StatefulWidget {
 }
 
 class _ResultadoState extends State<Resultado> {
+  void _botaoVoltar() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Jogar()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +24,7 @@ class _ResultadoState extends State<Resultado> {
           children: [
             Image.asset("images/moeda_cara.png"),
             GestureDetector(
-              onTap: () {},
+              onTap: _botaoVoltar,
               child: Image.asset("images/botao_voltar.png"),
             )
           ],
