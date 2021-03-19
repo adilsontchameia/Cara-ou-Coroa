@@ -6,11 +6,30 @@ class Jogar extends StatefulWidget {
 }
 
 class _JogarState extends State<Jogar> {
+
+void _exibirResultado(){
+
+}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
-      body: Container(),
+      //Utiliza-se preimeiro o prefixo 0xff - Color(0xff ),
+      //Com opacidade - Color.fromRGBO(r, g, b, opacity) // (255, 204, 128, 0.8),
+      backgroundColor: Color(0xff61bd86),
+      body: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Image.asset("images/logo.png"),
+            GestureDetector(
+              onTap: _exibirResultado,
+              child: Image.asset("images/botao_jogar.png"),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
