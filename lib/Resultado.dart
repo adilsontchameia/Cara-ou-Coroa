@@ -17,10 +17,10 @@ class _ResultadoState extends State<Resultado> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.asset("images/logo.png"),
+            Image.asset("images/moeda_cara.png"),
             GestureDetector(
-              onTap: _exibirResultado,
-              child: Image.asset("images/botao_jogar.png"),
+              onTap: () {},
+              child: Image.asset("images/botao_voltar.png"),
             )
           ],
         ),

@@ -1,4 +1,4 @@
-import 'package:cara_coroa/TelaSecundaria.dart';
+import 'package:cara_coroa/TelaPrimaria.dart';
 import 'package:flutter/material.dart';
 
 void main() {
